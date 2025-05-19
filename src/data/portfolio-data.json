@@ -1,0 +1,204 @@
+
+{
+  "personal": {
+    "name": "Praveen Kumar G",
+    "title": "Former Senior Software Engineer",
+"bio": "I’m Praveen Kumar Gangapuram, a Senior Software Engineer and CS grad student at SUNY Buffalo. I build full-stack AI-driven apps using Next.js, NestJS, FastAPI, and Docker. With 500+ DSA problems solved, I combine strong algorithmic skills with scalable, cloud-native development.",
+    "longBio": [
+      "I'm a Former Senior Software Engineer and graduate student in Computer Science at the State University of New York at Buffalo. I specialize in building full-stack web applications and intelligent systems that integrate deep learning, natural language processing, and modern cloud-native technologies.",
+
+"With hands-on experience in frameworks like Next.js, NestJS, and FastAPI, I’ve designed and deployed scalable solutions across domains including health tech, ed-tech, and real-time analytics. My projects often leverage LLMs (like DistilGPT-2), RESTful APIs, WebSockets, and microservices—all containerized using Docker and orchestrated via CI/CD pipelines on platforms like AWS, DigitalOcean, and Linode.",
+
+"I’ve automated enterprise workflows using the Microsoft Power Platform, saving teams dozens of hours per week, and consistently delivered robust backend systems and user-friendly interfaces. I’ve also authored 75+ competitive programming problems, solved over 500 algorithmic challenges, and believe in writing clean, maintainable code that scales with user needs.",
+
+"I’m passionate about solving real-world problems through software and constantly seek to learn, collaborate, and push the boundaries of what intelligent systems can do."
+    ],
+    "photo": "src/photos/profile.jpeg",
+    "contact": {
+      "email": "praveenkumarg18071999@gmail.com",
+      "linkedin": "linkedin.com/in/praveen-gangapuram-956659191/",
+      "github": "github.com/praveen18071999",
+      "twitter": "twitter.com/praveen18071999"
+    }
+  },
+  "experience": [
+  {
+    "title": "Senior Software Engineer",
+    "organization": "HCL Technologies",
+    "period": "Jul 2022 – Aug 2024",
+    "description": "Led full-stack development of enterprise CRM applications using React, Power Platform, C#, and JavaScript. Built dynamic Power Pages portals integrated with internal APIs and custom workflows. Automated internal operations using Power Automate, saving 40+ hours weekly. Developed reusable REST modules to accelerate backend service integration. Collaborated with cross-functional teams to ensure scalable and maintainable solutions."
+  },
+  {
+    "title": "Software Engineer I",
+    "organization": "MAQ Software",
+    "period": "Nov 2021 – Jul 2022",
+    "description": "Developed CRM portals using React, NestJS, and Power Platform for business automation. Built modular and high-performance UI components, reducing page load time by 30%. Integrated backend services using C#/Node.js and secured third-party SaaS APIs. Followed agile methodology and worked closely with designers and QA teams. Contributed to scalable backend API development and optimized database operations."
+  },
+  {
+    "title": "Associate Software Engineer",
+    "organization": "MAQ Software",
+    "period": "Nov 2020 – Nov 2021",
+    "description": "Developed low-code Power Apps optimized for mobile and desktop using embedded HTML/JavaScript. Maintained legacy jQuery frontends and C#-based RESTful services. Participated in bug fixing, performance tuning, and UI enhancements. Gained hands-on experience with agile sprints and daily stand-ups. Supported client requirements through quick turnarounds and detailed documentation."
+  },
+  {
+    "title": "Programming Problems Curator",
+    "organization": "Being Zero Pvt Ltd",
+    "period": "Mar 2019 – Apr 2019",
+    "description": "Created and published over 75 advanced coding problems focused on data structures and algorithms. Topics covered included trees, graphs, recursion, and dynamic programming. Built a MEAN-stack tool to scrape HackerEarth leaderboards and analyze coder performance. Developed a rating engine using ELO-based scoring logic. Supported the platform’s growth by reviewing submissions and maintaining test cases."
+  }
+],
+  "education":[
+  {
+    "title": "Master of Science in Computer Science",
+    "organization": "State University of New York at Buffalo",
+    "period": "2024 – 2026 (Expected)",
+    "description": "Focused on Artificial Intelligence, Full-Stack Development, and Cloud Computing. Worked on AI-driven applications using PyTorch, FastAPI, and Docker. Developed multiple projects integrating LLMs and scalable backend services. Actively involved in academic coding challenges and collaborative research. Strengthened foundations in algorithms, system design, and deployment pipelines."
+  },
+  {
+    "title": "Bachelor of Technology in Computer Science and Engineering",
+    "organization": "CMR College of Engineering and Technology",
+    "period": "2017 – 2021",
+    "description": "Graduated with first class and distinction. Studied Data Structures, Web Technologies, and Operating Systems. Built early versions of quiz and leaderboard platforms using MEAN stack. Organized coding events and authored 75+ competitive problems. Gained hands-on experience in full-stack development and REST API integration."
+  }
+],
+  "skills": [
+  {
+    "category": "Frontend",
+    "items": ["React", "Next.js", "TypeScript", "Tailwind", "Angular", "HTML", "CSS"]
+  },
+  {
+    "category": "Backend",
+    "items": [
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "MongoDB",
+      "FastAPI",
+      "NestJS",
+      "GraphQL",
+      "Redis",
+      "Docker",
+      "NGINX",
+      "CI/CD"
+    ]
+  },
+  {
+    "category": "AI/ML",
+    "items": ["PyTorch", "scikit-learn", "Hugging Face", "OpenAI API", "LLMs"]
+  },
+  {
+    "category": "Design",
+    "items": ["Figma", "UI/UX", "Animation", "Responsive"]
+  },
+  {
+    "category": "Tools & Platforms",
+    "items": ["Git", "Swagger", "Postman", "JIRA", "AWS", "DigitalOcean", "Linode", "Power Automate"]
+  },
+  {
+    "category": "Programming Languages",
+    "items": ["Python", "JavaScript", "TypeScript", "C", "C++", "Java", "C#", "SQL"]
+  },
+  {
+    "category": "Other",
+    "items": ["REST APIs", "WebSockets", "Data Structures & Algorithms", "System Design"]
+  }
+],
+  "projects": [
+    {
+      "title": "FitFuel",
+      "description": "An AI-driven meal planner using DistilGPT-2 with chatbots for trainers and doctors. Built with FastAPI, NextJS, and NestJS, deployed using Docker and reverse-proxied via NGINX. Provides personalized diet charts, scheduling, and secure cloud-hosted services.",
+      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=2070&auto=format&fit=crop",
+      "tags": ["Next.js", "NestJS", "Tailwind CSS", "FASTAPI", "Docker", "NGINX", "DistilGPT-2", "Supabase"],
+      "link": "http://104.248.229.28/"
+    },
+    {
+      "title": "Chest X-ray Classification",
+      "description": "A medical diagnostic tool using a CNN trained on ChestMNIST to predict X-ray outcomes. Deployed with FastAPI backend, Docker containers, and CI/CD pipeline on DigitalOcean. Offers accurate predictions via a clean NextJS frontend.",
+      "image": "https://www.heart.org/-/media/Images/Health-Topics/Heart-Attack/Doctor-holding-image-of-chest-xray.jpg?sc_lang=en&hash=111CEF6839D947F2CFBD03C0A0DA1C86",
+      "tags": ["React","Next.js", "Tailwind CSS", "FASTAPI", "Docker", "NGINX"],
+      "link": "http://142.93.244.44/"
+    },
+    {
+      "title": "FilmRaft",
+      "description": "A digital film archive platform with admin review tools and WebSocket-based donor chat. Full-stack build using React, NextJS, NestJS, PostgreSQL, and Docker. Automated deployment on Linode with real-time chat and approval workflows.",
+      "image": "https://images.squarespace-cdn.com/content/v1/5c90fe2eaf468307c83acde2/0b0077d9-e016-46d2-9d16-bc3cbf36ecc7/TPXM0lLvzMDIkMqnu9cFZS3ie8rMMNIl1658435216.jpg",
+      "tags": ["React Native", "NextJS", "NestJS", "Tailwind CSS", "PostgreSQL", "Docker", "NGINX", "CI/CD"],
+      "link": "http://172.232.31.234:3000/"
+    },
+    {
+      "title": "StudPro Coding Platform",
+      "description": "An LLM-powered coding platform for problem creation, auto-evaluation, and flowchart visualization. Built using NextJS, NestJS, and PostgreSQL with containerized deployment via Docker and CI/CD. Supports multilingual code execution, secure authentication, and scalable contest tracking.",
+      "image": "https://leadschool.in/wp-content/uploads/2022/04/shutterstock_1777292972.jpg",
+      "tags": ["Next.js", "Framer Motion", "Tailwind CSS", "NestJS", "MongoDB", "Docker", "NGINX","CI/CD"],
+      "link": "http://167.172.155.139/dashboard"
+    }
+  ],
+  "achievements": [
+  {
+    "title": "Hyderabad Best Coder – Finalist",
+    "year": "2021",
+    "description": "Reached the final round of Hyderabad's premier coding competition, showcasing problem-solving skills across advanced algorithmic challenges."
+  },
+  {
+    "title": "Winner – CODETHON",
+    "year": "2020",
+    "description": "Secured first place in CMR College’s flagship coding event, outperforming peers in algorithms and competitive programming."
+  },
+  {
+    "title": "Top 5 – Cod Fury (Osmania University)",
+    "year": "2020",
+    "description": "Ranked among the top 5 out of 300+ participants in a multi-round programming contest hosted by Osmania University."
+  },
+  {
+    "title": "CodeChef Contest Rank – 374/5000",
+    "year": "2020",
+    "description": "Ranked 374th out of over 5000 global participants in a monthly CodeChef coding contest focused on time-efficient algorithm design."
+  },
+  {
+    "title": "Qualified – Osmosis Techie of the Year",
+    "year": "2020",
+    "description": "Selected in the top tier of the national-level talent recognition program by Mindtree for excellence in technical aptitude and coding."
+  },
+  {
+    "title": "Programming Contest Organizer",
+    "year": "2019 – 2021",
+    "description": "Organized and judged 10+ inter-college competitive programming contests at CMR Group of Institutions, boosting coding culture across campuses."
+  }
+],
+  "blogPosts": [
+  {
+  "title": "Deploying a Deep Learning Model to a Web Server",
+  "excerpt": "A step-by-step guide on deploying a deep learning model trained on the ChestMNIST dataset using FastAPI, Docker, Next.js, and DigitalOcean.",
+  "date": "May 18, 2025",
+  "readTime": "6 min read",
+  "image": "https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs11831-024-10081-y/MediaObjects/11831_2024_10081_Fig1_HTML.png",
+  "content": "Deploying deep learning models to production requires combining machine learning with solid web development practices. In this guide, I walk through deploying a CNN trained on the ChestMNIST dataset—achieving 94% accuracy—to a live web server using FastAPI, Docker, and DigitalOcean.\n\nThe architecture consists of:\nFrontend: Built with Next.js for uploading chest X-ray images.\nBackend: Implemented with FastAPI to process images and return predictions.\nModel: A trained deep learning model in `.pth` format.\nNGINX: Configured as a reverse proxy for routing traffic securely.\nDeployment: Managed through Docker and hosted on DigitalOcean using Docker Compose.\n\nDeployment Steps:\n1. Set Up GitHub Repository: Created folders for `frontend`, `backend`, and `nginx`.\n2. Frontend with Next.js: Used `npm run dev` to start the app; built UI to handle image uploads.\n3. Backend with FastAPI: Loaded the model and exposed an endpoint to accept images and return disease probabilities.\n4. Dockerize Each Service: Wrote Dockerfiles for frontend, backend, and NGINX to automate server-side setups.\n5. Compose with Docker Compose: Unified the stack using `docker-compose.yml`.\n6. Deploy Locally: Verified everything runs on `localhost` with `docker-compose up --build`.\n7. Deploy to Cloud (DigitalOcean): Created a Droplet. Set up SSH key authentication. Cloned the GitHub repo. Installed Docker. Ran the build and started services.\n\nAccessing the deployed app via the droplet's public IP address confirms the full stack deployment.\n\nThis approach showcases how AI solutions can be productized using modern web tools and containerization. It ensures scalability, reliability, and a smooth user experience from model training to real-time inference."
+},
+    {
+      "title": "Mastering React Hooks",
+      "excerpt": "A comprehensive guide to using React Hooks effectively in your projects with practical examples.",
+      "date": "April 28, 2025",
+      "readTime": "8 min read",
+      "image": "https://cdn.codersociety.com/uploads/react-hooks.jpeg",
+      "content": "React Hooks revolutionized how we write React components when they were introduced in React 16.8. They allow you to use state and other React features without writing a class component. In this guide, we'll explore how to master React Hooks with practical examples and best practices.\n\nLet's start with the most commonly used hook: useState. This hook allows you to add state to functional components. Here's a simple example:\n\n```jsx\nfunction Counter() {\n  const [count, setCount] = useState(0);\n  \n  return (\n    <div>\n      <p>You clicked {count} times</p>\n      <button onClick={() => setCount(count + 1)}>\n        Click me\n      </button>\n    </div>\n  );\n}\n```\n\nThe useEffect hook is another fundamental hook that allows you to perform side effects in your components. It replaces lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount. Here's how you might use it to fetch data:\n\n```jsx\nfunction UserProfile({ userId }) {\n  const [user, setUser] = useState(null);\n  const [loading, setLoading] = useState(true);\n  \n  useEffect(() => {\n    setLoading(true);\n    fetchUser(userId).then(userData => {\n      setUser(userData);\n      setLoading(false);\n    });\n  }, [userId]); // Only re-run if userId changes\n  \n  if (loading) return <p>Loading...</p>;\n  return <div>{user.name}</div>;\n}\n```\n\nOne of the most powerful aspects of hooks is the ability to create custom hooks. This allows you to extract component logic into reusable functions. For example, we could create a custom hook for the data fetching logic above:\n\n```jsx\nfunction useUser(userId) {\n  const [user, setUser] = useState(null);\n  const [loading, setLoading] = useState(true);\n  \n  useEffect(() => {\n    setLoading(true);\n    fetchUser(userId).then(userData => {\n      setUser(userData);\n      setLoading(false);\n    });\n  }, [userId]);\n  \n  return { user, loading };\n}\n\n// Now we can use it in our component\nfunction UserProfile({ userId }) {\n  const { user, loading } = useUser(userId);\n  \n  if (loading) return <p>Loading...</p>;\n  return <div>{user.name}</div>;\n}\n```\n\nThe useContext hook provides a way to pass data through the component tree without having to pass props down manually at every level. This is particularly useful for themes, user authentication, or any global state that many components might need.\n\nThe useReducer hook is an alternative to useState that's preferable when you have complex state logic. It works similarly to Redux, allowing you to dispatch actions that update state according to a reducer function.\n\nOther built-in hooks include useCallback, useMemo, useRef, and more. Each serves a specific purpose and can help optimize your components when used correctly.\n\nWhen working with hooks, remember these rules:\n1. Only call hooks at the top level of your function components or custom hooks\n2. Don't call hooks inside loops, conditions, or nested functions\n3. Custom hooks should start with 'use' to follow convention\n\nBy mastering React Hooks, you'll write more concise, readable, and maintainable React code. The functional component paradigm enabled by hooks has become the standard way to write React applications, and understanding these patterns will make you a more effective React developer."
+    },
+    {
+  "title": "Building FilmRaft: A Real-Time Digital Archive Platform",
+  "excerpt": "Explore how FilmRaft enables real-time interaction between donors, admins, and viewers using WebSockets, Docker, and a scalable full-stack architecture.",
+  "date": "May 18, 2025",
+  "readTime": "5 min read",
+  "image": "https://images.squarespace-cdn.com/content/v1/5c90fe2eaf468307c83acde2/0b0077d9-e016-46d2-9d16-bc3cbf36ecc7/TPXM0lLvzMDIkMqnu9cFZS3ie8rMMNIl1658435216.jpg",
+  "content": "FilmRaft is a full-stack digital archive platform designed to manage, review, and publish community-submitted film content. It enables seamless, real-time communication between donors and admins using modern web technologies and scalable infrastructure.\n\nThe platform architecture includes:\n  Frontend: Built using React and Next.js for fast, responsive user interfaces.\n  Backend: Developed with NestJS and PostgreSQL for structured data handling and API orchestration.\n  WebSocket: Enables real-time tri-party chat between donors, admins, and moderators.\n  Deployment: Containerized with Docker and orchestrated using GitHub Actions for CI/CD.\n\nDevelopment Highlights:\n  Built user role-based dashboard where admins can review and approve film submissions.\n  Integrated WebSocket channels to allow instant messaging between stakeholders.\n  Designed a secure REST API layer for handling submissions, feedback, and chat history.\n  Configured Dockerfiles for frontend and backend with a shared custom network.\n  Automated deployment to Linode using GitHub Actions and Docker Compose for zero-downtime updates.\n\nThe result is a platform that supports rich media collaboration while maintaining performance, security, and scalability. FilmRaft demonstrates how modern JavaScript frameworks combined with real-time communication protocols can power next-gen content platforms."
+}
+  ],
+  "navItems": [
+    { "label": "About", "id": "about" },
+    { "label": "Projects", "id": "projects" },
+    { "label": "Experience", "id": "experience" },
+    { "label": "Education", "id": "education" },
+    { "label": "Skills", "id": "skills" },
+    { "label": "Achievements", "id": "achievements" },
+    { "label": "Blog", "id": "blog" },
+    { "label": "Contact", "id": "contact" }
+  ]
+}
