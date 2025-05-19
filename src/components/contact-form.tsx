@@ -25,9 +25,6 @@ export default function ContactForm() {
     setIsSubmitting(true)
 
     try {
-      // Get form data
-      const formDataObj = new FormData(event.currentTarget)
-      
       // Store in localStorage for offline backup
       try {
         const newContact = {
@@ -46,41 +43,69 @@ export default function ContactForm() {
         console.error("Error saving to localStorage:", e)
       }
 
-      // Send to Formspree
-      const response = await fetch("https://formspree.io/f/your-formspree-form-id", {
-        method: "POST",
-        body: formDataObj,
-        headers: {
-          Accept: "application/json",
-        },
-      })
+      // Alternative method: Use an iframe to submit the form directly
+      // This is more reliable than the fetch method for Google Forms
+      const formIframe = document.createElement('iframe');
+      formIframe.style.display = 'none';
+      document.body.appendChild(formIframe);
 
-      if (response.ok) {
-        toast({
-          title: "Success!",
-          description: "Your message has been sent. We'll get back to you soon!",
-        })
-        // Reset the form
-        setFormData({
-          name: "",
-          email: "",
-          subject: "",
-          message: "",
-        })
-        // Also reset the actual form element
-        if (formRef.current) formRef.current.reset()
-      } else {
-        const errorData = await response.json()
-        throw new Error(errorData.message || "Failed to send the message")
+      // Build form in iframe
+      const googleFormId = "1FAIpQLSdiU8hjaxrqw4Bm07liJqz3RdoJWj_Xcecx5FI9HbJJzYJEAw";
+      const formUrl = `https://docs.google.com/forms/d/e/${googleFormId}/formResponse`;
+      
+      // Create form HTML
+      const formEntryIds = {
+        name: "entry.2005620554",
+        email: "entry.1045781291",
+        subject: "entry.1065046570",
+        message: "entry.839337160"
+      };
+
+      // Create hidden form inside the iframe
+      const doc = formIframe.contentDocument || formIframe.contentWindow?.document;
+      if (doc) {
+        doc.open();
+        doc.write(`
+          <form action="${formUrl}" method="post" id="google-form">
+            <input name="${formEntryIds.name}" value="${encodeURIComponent(formData.name)}">
+            <input name="${formEntryIds.email}" value="${encodeURIComponent(formData.email)}">
+            <input name="${formEntryIds.subject}" value="${encodeURIComponent(formData.subject)}">
+            <textarea name="${formEntryIds.message}">${encodeURIComponent(formData.message)}</textarea>
+          </form>
+          <script>document.getElementById('google-form').submit();</script>
+        `);
+        doc.close();
       }
+
+      // Remove iframe after submission (after a short delay)
+      setTimeout(() => {
+        document.body.removeChild(formIframe);
+      }, 1000);
+
+      // Show success message
+      toast({
+        title: "Success!",
+        description: "Your message has been sent. We'll get back to you soon!",
+      });
+
+      // Reset the form
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+      if (formRef.current) formRef.current.reset();
+      
     } catch (error) {
+      console.error("Form submission error:", error);
       toast({
         title: "Error",
         description: error instanceof Error ? error.message : "Something went wrong. Please try again.",
         variant: "destructive",
-      })
+      });
     } finally {
-      setIsSubmitting(false)
+      setIsSubmitting(false);
     }
   }
 
@@ -144,7 +169,7 @@ export default function ContactForm() {
             rows={5}
             value={formData.message}
             onChange={handleChange}
-            className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-400 dark:focus:ring-gray-600 dark:text-white"
+            className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-400 dark:focus:ring-gray-600 dark:text-white resize-none"
             placeholder="Your message"
             required
           ></textarea>
