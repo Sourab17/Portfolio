@@ -49,7 +49,7 @@ export default function Navbar() {
               transition={{ duration: 0.5 }}
               className="text-xl md:text-2xl font-bold"
             >
-              John Doe
+              Praveen Kumar G
             </motion.a>
           </div>
 
