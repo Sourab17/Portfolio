@@ -1,10 +1,7 @@
 "use client"
 
-import type React from "react"
-
-import { useState } from "react"
+import { useState, useRef } from "react"
 import { Button } from "@/components/ui/button"
-import { submitContactForm } from "../app/action"
 import { toast } from "@/components/ui/use-toast"
 import { Toaster } from "@/components/ui/toaster"
 
@@ -16,6 +13,7 @@ export default function ContactForm() {
     subject: "",
     message: "",
   })
+  const formRef = useRef<HTMLFormElement>(null)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
@@ -27,13 +25,40 @@ export default function ContactForm() {
     setIsSubmitting(true)
 
     try {
+      // Get form data
       const formDataObj = new FormData(event.currentTarget)
-      const result = await submitContactForm(formDataObj)
+      
+      // Store in localStorage for offline backup
+      try {
+        const newContact = {
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          date: new Date().toISOString(),
+        }
+        
+        const storedContacts = localStorage.getItem('contactSubmissions') || '[]'
+        const contacts = JSON.parse(storedContacts)
+        contacts.push(newContact)
+        localStorage.setItem('contactSubmissions', JSON.stringify(contacts))
+      } catch (e) {
+        console.error("Error saving to localStorage:", e)
+      }
 
-      if (result.success) {
+      // Send to Formspree
+      const response = await fetch("https://formspree.io/f/your-formspree-form-id", {
+        method: "POST",
+        body: formDataObj,
+        headers: {
+          Accept: "application/json",
+        },
+      })
+
+      if (response.ok) {
         toast({
           title: "Success!",
-          description: "Your message has been sent and recorded in our database. We'll get back to you soon!",
+          description: "Your message has been sent. We'll get back to you soon!",
         })
         // Reset the form
         setFormData({
@@ -42,17 +67,16 @@ export default function ContactForm() {
           subject: "",
           message: "",
         })
+        // Also reset the actual form element
+        if (formRef.current) formRef.current.reset()
       } else {
-        toast({
-          title: "Error",
-          description: result.message,
-          variant: "destructive",
-        })
+        const errorData = await response.json()
+        throw new Error(errorData.message || "Failed to send the message")
       }
     } catch (error) {
       toast({
         title: "Error",
-        description: "Something went wrong. Please try again.",
+        description: error instanceof Error ? error.message : "Something went wrong. Please try again.",
         variant: "destructive",
       })
     } finally {
@@ -62,8 +86,8 @@ export default function ContactForm() {
 
   return (
     <>
-      <form className="space-y-6" onSubmit={handleSubmit}>
-        <div className="grid grid-cols-2 gap-4">
+      <form className="space-y-6" onSubmit={handleSubmit} ref={formRef}>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="space-y-2">
             <label htmlFor="name" className="text-sm font-medium dark:text-gray-400">
               Name
@@ -74,7 +98,7 @@ export default function ContactForm() {
               type="text"
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-400 dark:focus:ring-gray-600"
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-400 dark:focus:ring-gray-600 dark:text-white"
               placeholder="Your name"
               required
             />
@@ -89,7 +113,7 @@ export default function ContactForm() {
               type="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-400 dark:focus:ring-gray-600"
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-400 dark:focus:ring-gray-600 dark:text-white"
               placeholder="Your email"
               required
             />
@@ -105,7 +129,7 @@ export default function ContactForm() {
             type="text"
             value={formData.subject}
             onChange={handleChange}
-            className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-400 dark:focus:ring-gray-600"
+            className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-400 dark:focus:ring-gray-600 dark:text-white"
             placeholder="Subject"
             required
           />
@@ -120,7 +144,7 @@ export default function ContactForm() {
             rows={5}
             value={formData.message}
             onChange={handleChange}
-            className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-400 dark:focus:ring-gray-600"
+            className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-400 dark:focus:ring-gray-600 dark:text-white"
             placeholder="Your message"
             required
           ></textarea>

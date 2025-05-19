@@ -1,7 +1,4 @@
-"use server"
-
-import fs from "fs"
-import path from "path"
+"use client"
 
 interface ContactFormData {
   name: string
@@ -11,6 +8,7 @@ interface ContactFormData {
   date: string
 }
 
+// Client-side form submission function
 export async function submitContactForm(formData: FormData) {
   try {
     const name = formData.get("name") as string
@@ -30,48 +28,26 @@ export async function submitContactForm(formData: FormData) {
       date: new Date().toISOString(),
     }
 
-    // Create absolute path to data directory at project root
-    const projectRoot = path.resolve(process.cwd())
-    const dataDir = path.join(projectRoot, "data")
-    const filePath = path.join(dataDir, "contacts.json")
-    
-    console.log("Saving contact to:", filePath)
+    // Store in localStorage for static sites
+    try {
+      const storedContacts = localStorage.getItem('contactSubmissions') || '[]'
+      const contacts = JSON.parse(storedContacts)
+      contacts.push(newContact)
+      localStorage.setItem('contactSubmissions', JSON.stringify(contacts))
 
-    // Create directory if it doesn't exist
-    if (!fs.existsSync(dataDir)) {
-      console.log("Creating directory:", dataDir)
-      fs.mkdirSync(dataDir, { recursive: true })
+      // For production, you could integrate an external service here
+      // Example: Send to a form endpoint service
+      // await fetch('https://formspree.io/f/your-form-id', {
+      //   method: 'POST',
+      //   headers: {'Content-Type': 'application/json'},
+      //   body: JSON.stringify(newContact)
+      // })
+
+      return { success: true, message: "Message sent successfully!" }
+    } catch (e) {
+      console.error("Error saving contact:", e)
+      return { success: false, message: "Failed to store contact information" }
     }
-
-    // Read existing contacts or create empty array
-    let contacts: ContactFormData[] = []
-    if (fs.existsSync(filePath)) {
-      const fileContent = fs.readFileSync(filePath, "utf8")
-      try {
-        contacts = JSON.parse(fileContent)
-        if (!Array.isArray(contacts)) {
-          console.log("File exists but content is not an array, resetting")
-          contacts = []
-        }
-      } catch (e) {
-        console.log("Error parsing JSON file, resetting:", e)
-        contacts = []
-      }
-    } else {
-      console.log("File doesn't exist, creating new file")
-    }
-
-    // Add new contact
-    contacts.push(newContact)
-
-    // Write back to file with proper permissions
-    fs.writeFileSync(filePath, JSON.stringify(contacts, null, 2), { 
-      encoding: 'utf8',
-      mode: 0o666 // Read and write for everyone
-    })
-
-    console.log("Contact saved successfully")
-    return { success: true, message: "Message sent successfully!" }
   } catch (error) {
     console.error("Error submitting form:", error)
     return { success: false, message: "Failed to send message. Please try again." }
