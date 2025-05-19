@@ -65,7 +65,7 @@ export default function ClientPage() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="rounded-full px-8 border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all"
+                  className="rounded-full px-8 border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all dark:text-white"
                   onClick={() => handleScrollTo("contact")}
                 >
                   Contact Me
@@ -140,15 +140,7 @@ export default function ClientPage() {
                       alt={portfolioData.personal.name}
                       className="absolute inset-0 object-cover w-full h-full rounded-full border-4 border-white dark:border-gray-800 shadow-lg"
                     />
-                    <motion.div
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: 0.4 }}
-                      className="absolute -bottom-4 -right-4 bg-white dark:bg-gray-800 rounded-full p-3 shadow-lg"
-                    >
-                      
-                    </motion.div>
+                    
                   </motion.div>
 
                   <motion.div
@@ -158,7 +150,7 @@ export default function ClientPage() {
                     transition={{ delay: 0.3 }}
                     className="mt-6"
                   >
-                    <Button variant="outline" className="rounded-full px-6 py-2 border-gray-300 dark:border-gray-700" onClick={()=>{window.open('https://drive.google.com/file/d/1TiD-vtfK5CzexagmnelbyEHEI5VD5OZh/view?usp=drive_link','_blank')}}>
+                    <Button variant="outline" className="rounded-full px-6 py-2 border-gray-300 dark:border-gray-700 dark:text-white" onClick={()=>{window.open('https://drive.google.com/file/d/1TiD-vtfK5CzexagmnelbyEHEI5VD5OZh/view?usp=drive_link','_blank')}}>
                       <Download className="mr-2 h-4 w-4"  />
                       Download Resume
                     </Button>
@@ -174,14 +166,14 @@ export default function ClientPage() {
                   className="flex flex-col justify-center"
                 >
                   <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 shadow-md h-full">
-                    <h3 className="text-xl font-semibold mb-6">Professional Summary</h3>
+                    <h3 className="text-xl font-semibold mb-6 dark:text-white">Professional Summary</h3>
                     <div className="space-y-5">
                       <div className="flex items-start gap-3">
                         <div className="bg-gray-200 dark:bg-gray-700 rounded-full p-2 mt-1">
                           <Briefcase className="h-4 w-4 text-gray-700 dark:text-gray-300" />
                         </div>
                         <div>
-                          <h4 className="font-medium">Experience</h4>
+                          <h4 className="font-medium dark:text-gray-400">Experience</h4>
                           <p className="text-gray-600 dark:text-gray-400">4+ years in Software Development</p>
                         </div>
                       </div>
@@ -191,7 +183,7 @@ export default function ClientPage() {
                           <Code className="h-4 w-4 text-gray-700 dark:text-gray-300" />
                         </div>
                         <div>
-                          <h4 className="font-medium">Tech Stack</h4>
+                          <h4 className="font-medium dark:text-gray-400">Tech Stack</h4>
                           <p className="text-gray-600 dark:text-gray-400">React, Next.js, Node.js, Nest JS, TypeScript, AI/ML</p>
                         </div>
                       </div>
@@ -201,7 +193,7 @@ export default function ClientPage() {
                           <GraduationCap className="h-4 w-4 text-gray-700 dark:text-gray-300" />
                         </div>
                         <div>
-                          <h4 className="font-medium">Education</h4>
+                          <h4 className="font-medium dark:text-gray-400">Education</h4>
                           <p className="text-gray-600 dark:text-gray-400">Master&#39;s in Computer Science</p>
                         </div>
                       </div>
@@ -211,7 +203,7 @@ export default function ClientPage() {
                           <MapPin className="h-4 w-4 text-gray-700 dark:text-gray-300" />
                         </div>
                         <div>
-                          <h4 className="font-medium">Location</h4>
+                          <h4 className="font-medium dark:text-gray-400">Location</h4>
                           <p className="text-gray-600 dark:text-gray-400">Buffalo, NY</p>
                         </div>
                       </div>
@@ -288,7 +280,7 @@ export default function ClientPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Featured Projects</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center dark:text-white">Featured Projects</h2>
               <div className="grid md:grid-cols-2 gap-8">
                 {portfolioData.projects.map((project, index) => (
                   <ProjectCard
@@ -304,7 +296,7 @@ export default function ClientPage() {
               <div className="text-center mt-12">
                 <Button
                   variant="outline"
-                  className="rounded-full px-8"
+                  className="rounded-full px-8 dark:text-white"
                   onClick={() => window.open(`https://${portfolioData.personal.contact.github}`, "_blank")}
                 >
                   View All Projects <ArrowRight className="ml-2 h-4 w-4" />
@@ -326,7 +318,7 @@ export default function ClientPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Skills & Expertise</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center dark:text-white">Skills & Expertise</h2>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 {portfolioData.skills.map((skillCategory, index) => (
                   <Card
@@ -357,7 +349,7 @@ export default function ClientPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Professional Experience</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center dark:text-white">Professional Experience</h2>
               <div className="max-w-3xl mx-auto">
                 {portfolioData.experience.map((exp, index) => (
                   <TimelineItem
@@ -386,7 +378,7 @@ export default function ClientPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Education</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center dark:text-white">Education</h2>
               <div className="max-w-3xl mx-auto">
                 {portfolioData.education.map((edu, index) => (
                   <TimelineItem
@@ -412,7 +404,7 @@ export default function ClientPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Achievements</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center dark:text-white">Achievements</h2>
               <div className="grid md:grid-cols-2 gap-6">
                 {portfolioData.achievements.map((achievement, index) => (
                   <AchievementCard
@@ -439,7 +431,7 @@ export default function ClientPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Latest Blog Posts</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center dark:text-white">Latest Blog Posts</h2>
               <div className="grid md:grid-cols-3 gap-8">
                 {portfolioData.blogPosts.map((post, index) => (
                   <BlogCard
@@ -455,7 +447,7 @@ export default function ClientPage() {
                 ))}
               </div>
               <div className="text-center mt-12">
-                <Button variant="outline" className="rounded-full px-8" onClick={() => window.open("#blog", "_self")}>
+                <Button variant="outline" className="rounded-full px-8 dark:text-white" onClick={() => window.open("#blog", "_self")}>
                   View All Posts <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </div>
@@ -472,10 +464,10 @@ export default function ClientPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Get In Touch</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center dark:text-white">Get In Touch</h2>
               <div className="grid md:grid-cols-2 gap-12">
                 <div className="space-y-6">
-                  <h3 className="text-2xl font-medium">Let&#39;s work together</h3>
+                  <h3 className="text-2xl font-medium dark:text-gray-400">Let&#39;s work together</h3>
                   <p className="text-lg text-gray-700 dark:text-gray-300">
                     I&#39;m currently available for freelance work and open to new opportunities. If you have a project that
                     needs some creative input, feel free to reach out.
@@ -483,7 +475,7 @@ export default function ClientPage() {
                   <div className="space-y-4 pt-4">
                     <div className="flex items-center gap-3">
                       <Mail className="h-5 w-5 text-gray-500" />
-                      <a href={`mailto:${portfolioData.personal.contact.email}`} className="hover:underline">
+                      <a href={`mailto:${portfolioData.personal.contact.email}`} className="hover:underline dark:text-gray-400">
                         {portfolioData.personal.contact.email}
                       </a>
                     </div>
@@ -493,7 +485,7 @@ export default function ClientPage() {
                         href={`https://${portfolioData.personal.contact.linkedin}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="hover:underline"
+                        className="hover:underline dark:text-gray-400"
                       >
                         {portfolioData.personal.contact.linkedin}
                       </a>
@@ -504,7 +496,7 @@ export default function ClientPage() {
                         href={`https://${portfolioData.personal.contact.github}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="hover:underline"
+                        className="hover:underline dark:text-gray-400"
                       >
                         {portfolioData.personal.contact.github}
                       </a>
@@ -528,7 +520,7 @@ export default function ClientPage() {
                 <Button
                   variant="ghost"
                   size="icon"
-                  className="rounded-full"
+                  className="rounded-full dark:text-gray-400"
                   onClick={() => window.open(`https://${portfolioData.personal.contact.github}`, "_blank")}
                 >
                   <Github className="h-5 w-5" />
@@ -536,7 +528,7 @@ export default function ClientPage() {
                 <Button
                   variant="ghost"
                   size="icon"
-                  className="rounded-full"
+                  className="rounded-full dark:text-gray-400"
                   onClick={() => window.open(`https://${portfolioData.personal.contact.linkedin}`, "_blank")}
                 >
                   <Linkedin className="h-5 w-5" />
@@ -544,7 +536,7 @@ export default function ClientPage() {
                 <Button
                   variant="ghost"
                   size="icon"
-                  className="rounded-full"
+                  className="rounded-full dark:text-gray-400"
                   onClick={() => window.open(`https://${portfolioData.personal.contact.twitter}`, "_blank")}
                 >
                   <Twitter className="h-5 w-5" />
@@ -552,7 +544,7 @@ export default function ClientPage() {
                 <Button
                   variant="ghost"
                   size="icon"
-                  className="rounded-full"
+                  className="rounded-full dark:text-gray-400"
                   onClick={() => window.open(`mailto:${portfolioData.personal.contact.email}`)}
                 >
                   <Mail className="h-5 w-5" />

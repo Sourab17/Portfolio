@@ -103,7 +103,7 @@ export default function SidebarNavigation() {
         }`}
       >
         <div className="p-6 border-b border-gray-200 dark:border-gray-800 flex items-center justify-between">
-          <h2 className="text-xl font-bold">{portfolioData.personal.name}</h2>
+          <h2 className="text-xl font-bold dark:text-white">{portfolioData.personal.name}</h2>
           <div className="flex items-center gap-2">
             <ThemeToggle />
             {isMobile && (
@@ -144,7 +144,7 @@ export default function SidebarNavigation() {
               className="w-10 h-10 rounded-full object-cover"
             />
             <div>
-              <p className="font-medium text-sm">{portfolioData.personal.name}</p>
+              <p className="font-medium text-sm dark:text-white">{portfolioData.personal.name}</p>
               <p className="text-xs text-gray-500 dark:text-gray-400">{portfolioData.personal.title}</p>
             </div>
           </div>
