@@ -72,7 +72,7 @@ export default function SidebarNavigation() {
           variant="ghost"
           size="icon"
           onClick={() => setIsOpen(!isOpen)}
-          className="fixed top-4 left-4 z-50 rounded-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm"
+          className="fixed top-4 left-4 z-50 rounded-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm dark:text-white "
           aria-label={isOpen ? "Close menu" : "Open menu"}
         >
           {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -111,7 +111,7 @@ export default function SidebarNavigation() {
                 variant="ghost"
                 size="icon"
                 onClick={() => setIsOpen(false)}
-                className="h-8 w-8 rounded-full"
+                className="h-8 w-8 rounded-full dark:text-white"
                 aria-label="Close menu"
               >
                 <X className="h-4 w-4" />
