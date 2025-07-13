@@ -116,7 +116,7 @@
       "description": "A medical diagnostic tool using a CNN trained on ChestMNIST to predict X-ray outcomes. Deployed with FastAPI backend, Docker containers, and CI/CD pipeline on DigitalOcean. Offers accurate predictions via a clean NextJS frontend.",
       "image": "https://www.heart.org/-/media/Images/Health-Topics/Heart-Attack/Doctor-holding-image-of-chest-xray.jpg?sc_lang=en&hash=111CEF6839D947F2CFBD03C0A0DA1C86",
       "tags": ["React","Next.js", "Tailwind CSS", "FASTAPI", "Docker", "NGINX"],
-      "link": "http://142.93.244.44/"
+      "link": "http://34.227.58.67/"
     },
     {
       "title": "FilmRaft",
