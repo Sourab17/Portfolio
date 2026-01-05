@@ -1,23 +1,21 @@
 
 {
   "personal": {
-    "name": "Praveen Kumar G",
-    "title": "Former Senior Software Engineer",
-"bio": "I’m Praveen Kumar Gangapuram, a Senior Software Engineer and CS grad student at SUNY Buffalo. I build full-stack AI-driven apps using Next.js, NestJS, FastAPI, and Docker. With 500+ DSA problems solved, I combine strong algorithmic skills with scalable, cloud-native development.",
+    "name": "Sourab Gadipalli",
+    "title": "Security Engineer",
+"bio": "Cybersecurity graduate from the University of Maryland - College Park, with hands-on experience in cloud security, vulnerability assessment and digital forensics. Skilled in Python scripting, incident response and AWS/Azure security tools. Currently enhancing expertise through the WiCyS Security Training program in preparation for a GIAC certification.",
     "longBio": [
-      "I'm a Former Senior Software Engineer and graduate student in Computer Science at the State University of New York at Buffalo. I specialize in building full-stack web applications and intelligent systems that integrate deep learning, natural language processing, and modern cloud-native technologies.",
+      "Cybersecurity graduate with expertise in cloud infrastructure security, penetration testing, and digital forensics. I specialize in securing AWS and Azure environments, hardening infrastructure, and conducting vulnerability assessments to proactively identify risks.",
 
-"With hands-on experience in frameworks like Next.js, NestJS, and FastAPI, I’ve designed and deployed scalable solutions across domains including health tech, ed-tech, and real-time analytics. My projects often leverage LLMs (like DistilGPT-2), RESTful APIs, WebSockets, and microservices—all containerized using Docker and orchestrated via CI/CD pipelines on platforms like AWS, DigitalOcean, and Linode.",
+"My hands-on experience includes cloud security and penetration testing, backed by professional certifications: AWS Certified Security – Specialty, AWS Solutions Architect, CompTIA Security+, and eJPT (Junior Penetration Tester). I actively participate in Capture The Flag (CTF) competitions and maintain a 90+ day learning streak on TryHackMe to sharpen my skills.",
 
-"I’ve automated enterprise workflows using the Microsoft Power Platform, saving teams dozens of hours per week, and consistently delivered robust backend systems and user-friendly interfaces. I’ve also authored 75+ competitive programming problems, solved over 500 algorithmic challenges, and believe in writing clean, maintainable code that scales with user needs.",
-
-"I’m passionate about solving real-world problems through software and constantly seek to learn, collaborate, and push the boundaries of what intelligent systems can do."
+"I have applied my skills through hands-on projects in malware forensics, penetration testing, compliance audits, and vulnerability assessments, investigating system compromises, identifying security gaps, and providing actionable recommendations to strengthen security postures."
     ],
     "photo": "src/photos/profile.jpeg",
     "contact": {
-      "email": "praveenkumarg18071999@gmail.com",
-      "linkedin": "linkedin.com/in/praveen-gangapuram-956659191/",
-      "github": "github.com/praveen18071999",
+      "email": "gsourab@terpmail.umd.edu",
+      "linkedin": "linkedin.com/in/sourab-gadipalli/",
+      "github": "https://github.com/Sourab17",
       "twitter": "twitter.com/praveen18071999"
     }
   },
