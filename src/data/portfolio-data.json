@@ -40,9 +40,9 @@
     "Participated in secure code reviews to assess pull requests and code changes for security standards, performance and best practices.",
     
     "Automated pipeline security checks using Python, reducing mean time to respond (MTTR) to incidents by 30%.",
-    
-    "Worked across the full SDLC in an Agile environment and deployed ETL workflows and compliance reports using secure CI/CD
-pipelines."]
+
+      "Worked across the full SDLC in an Agile environment and deployed ETL workflows and compliance reports using secure CI/CD pipelines."
+    ]
   }
 ],
   "education":[
@@ -126,7 +126,7 @@ pipelines."]
       "link": ""
     }
   ],
-  "achievements": [
+  "certifications": [
   {
     "title": "AWS Certified Security - Specialty",
     "year": "2025",
@@ -154,7 +154,7 @@ pipelines."]
     { "label": "Experience", "id": "experience" },
     { "label": "Education", "id": "education" },
     { "label": "Skills", "id": "skills" },
-    { "label": "Achievements", "id": "achievements" },
+    { "label": "Certifications", "id": "certifications" },
     { "label": "Contact", "id": "contact" }
   ]
 }
