@@ -356,7 +356,7 @@ export default function ClientPage() {
                     title={exp.title}
                     organization={exp.organization}
                     period={exp.period}
-                    description={exp.description}
+                    description={Array.isArray(exp.description) ? exp.description.join(" ") : exp.description}
                     isLast={index === portfolioData.experience.length - 1}
                   />
                 ))}
