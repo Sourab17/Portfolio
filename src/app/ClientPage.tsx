@@ -25,7 +25,7 @@ import CertificationCard from "@/components/certification-card"
 import SidebarNavigation from "@/components/sidebar-navigation"
 import ContactForm from "@/components/contact-form"
 import portfolioData from "@/data/portfolio-data.json"
-import profimeImage from "@/Profile.jpg"
+
 
 export default function ClientPage() {
   const handleScrollTo = (id: string) => {
@@ -135,7 +135,7 @@ export default function ClientPage() {
                   >
                     <div className="absolute inset-0 rounded-full bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 shadow-xl"></div>
                     <img
-                      src={profimeImage.src}
+                      src="/Profile.jpg"
                       alt={portfolioData.personal.name}
                       className="absolute inset-0 object-cover w-full h-full rounded-full border-4 border-white dark:border-gray-800 shadow-lg"
                     />
