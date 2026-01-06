@@ -11,7 +11,7 @@
 
 "I have applied my skills through hands-on projects in malware forensics, penetration testing, compliance audits, and vulnerability assessments, investigating system compromises, identifying security gaps, and providing actionable recommendations to strengthen security postures."
     ],
-    "photo": "src/photos/profile.jpeg",
+    "photo": "src/photos/Profile.jpg",
     "contact": {
       "email": "gsourab@terpmail.umd.edu",
       "linkedin": "linkedin.com/in/sourab-gadipalli/",
@@ -99,31 +99,31 @@ pipelines."]
   "projects": [
     {
       "title": "Centralized Log Management System",
-      "description": "An AI-driven meal planner using DistilGPT-2 with chatbots for trainers and doctors. Built with FastAPI, NextJS, and NestJS, deployed using Docker and reverse-proxied via NGINX. Provides personalized diet charts, scheduling, and secure cloud-hosted services.",
-      "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=2070&auto=format&fit=crop",
-      "tags": ["Next.js", "NestJS", "Tailwind CSS", "FASTAPI", "Docker", "NGINX", "DistilGPT-2", "Supabase"],
-      "link": "http://104.248.229.28/"
+      "description": "Built a centralized logging system on Ubuntu VMs using rsyslog, MySQL, and Adminer to collect and manage logs from client machines, improving visibility and auditability of system events.",
+      "image": "src/photos/Log.jpg",
+      "tags": ["Log Management", "Centralized Logging"],
+      "link": ""
     },
     {
       "title": "Securing a Cloud-based (AWS) Healthcare Application",
-      "description": "A medical diagnostic tool using a CNN trained on ChestMNIST to predict X-ray outcomes. Deployed with FastAPI backend, Docker containers, and CI/CD pipeline on DigitalOcean. Offers accurate predictions via a clean NextJS frontend.",
-      "image": "https://www.heart.org/-/media/Images/Health-Topics/Heart-Attack/Doctor-holding-image-of-chest-xray.jpg?sc_lang=en&hash=111CEF6839D947F2CFBD03C0A0DA1C86",
-      "tags": ["React","Next.js", "Tailwind CSS", "FASTAPI", "Docker", "NGINX"],
-      "link": "http://34.227.58.67/"
+      "description": "Assessed and secured a cloud healthcare application by implementing HIPAA-compliant IAM policies, access controls, encryption, and monitoring, reducing security risks by 90% and integrating AWS Config and Inspector for continuous compliance.",
+      "image": "src/photos/Cloud.jpg",
+      "tags": ["Cloud Security", "AWS", "Infrastructure Security", "HIPAA Compliance", "IAM", "Security Groups", "AWS GuardDuty", "AWS Config", "AWS Inspector"],
+      "link": ""
     },
     {
       "title": "Penetration Testing & Vulnerability Assessment",
-      "description": "A digital film archive platform with admin review tools and WebSocket-based donor chat. Full-stack build using React, NextJS, NestJS, PostgreSQL, and Docker. Automated deployment on Linode with real-time chat and approval workflows.",
-      "image": "https://images.squarespace-cdn.com/content/v1/5c90fe2eaf468307c83acde2/0b0077d9-e016-46d2-9d16-bc3cbf36ecc7/TPXM0lLvzMDIkMqnu9cFZS3ie8rMMNIl1658435216.jpg",
-      "tags": ["React Native", "NextJS", "NestJS", "Tailwind CSS", "PostgreSQL", "Docker", "NGINX", "CI/CD"],
-      "link": "http://172.232.31.234:3000/"
+      "description": "Conducted end-to-end penetration testing and vulnerability assessment using tools like Nmap, Metasploit, and Wireshark, identifying critical security flaws and providing actionable remediation recommendations.",
+      "image": "src/photos/Penetration.jpg",
+      "tags": ["Reconnaissance", "Initial Exploitation", "Establish Persistence & Escalate Privileges", "Move Laterally", "Exfiltration"],
+      "link": ""
     },
     {
       "title": "Malware-Infected Hard Drive Forensic Investigation",
-      "description": "An LLM-powered coding platform for problem creation, auto-evaluation, and flowchart visualization. Built using NextJS, NestJS, and PostgreSQL with containerized deployment via Docker and CI/CD. Supports multilingual code execution, secure authentication, and scalable contest tracking.",
-      "image": "https://leadschool.in/wp-content/uploads/2022/04/shutterstock_1777292972.jpg",
-      "tags": ["Next.js", "Framer Motion", "Tailwind CSS", "NestJS", "MongoDB", "Docker", "NGINX","CI/CD"],
-      "link": "http://167.172.155.139/dashboard"
+      "description": "Performed a full digital forensic investigation on a malware-infected drive, recovering encrypted artifacts, hidden messages, and documented findings in a detailed forensic report.",
+      "image": "src/photos/Digital.jpg",
+      "tags": ["Digital Forensics", "Malware Analysis", "Incident Response", "Autopsy", "Volatility", "Wireshark", "VeraCrypt"],
+      "link": ""
     }
   ],
   "achievements": [
