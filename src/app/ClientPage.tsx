@@ -25,7 +25,7 @@ import CertificationCard from "@/components/certification-card"
 import SidebarNavigation from "@/components/sidebar-navigation"
 import ContactForm from "@/components/contact-form"
 import portfolioData from "@/data/portfolio-data.json"
-import profimeImage from "@/photos/profile.jpeg"
+import profimeImage from "@/Profile.jpg"
 
 export default function ClientPage() {
   const handleScrollTo = (id: string) => {
