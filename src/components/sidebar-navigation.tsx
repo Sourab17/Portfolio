@@ -6,7 +6,7 @@ import { Home, Briefcase, GraduationCap, Award, FileText, Mail, Layers, X, Menu 
 import { Button } from "@/components/ui/button"
 import ThemeToggle from "@/components/theme-toggle"
 import portfolioData from "@/data/portfolio-data.json"
-import profileImage from "../photos/profile.jpeg"
+import profileImage from "../Profile.jpg"
 
 export default function SidebarNavigation() {
   const [isOpen, setIsOpen] = useState(false)
