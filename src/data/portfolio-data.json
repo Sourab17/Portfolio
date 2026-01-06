@@ -11,7 +11,7 @@
 
 "I have applied my skills through hands-on projects in malware forensics, penetration testing, compliance audits, and vulnerability assessments, investigating system compromises, identifying security gaps, and providing actionable recommendations to strengthen security postures."
     ],
-    "photo": "src/photos/Profile.jpg",
+    "photo": "/Profile.jpg",
     "contact": {
       "email": "gsourab@terpmail.umd.edu",
       "linkedin": "linkedin.com/in/sourab-gadipalli/",
@@ -100,28 +100,28 @@
     {
       "title": "Centralized Log Management System",
       "description": "Built a centralized logging system on Ubuntu VMs using rsyslog, MySQL, and Adminer to collect and manage logs from client machines, improving visibility and auditability of system events.",
-      "image": "src/photos/Log.jpg",
+      "image": "/Log.jpg",
       "tags": ["Log Management", "Centralized Logging"],
       "link": ""
     },
     {
       "title": "Securing a Cloud-based (AWS) Healthcare Application",
       "description": "Assessed and secured a cloud healthcare application by implementing HIPAA-compliant IAM policies, access controls, encryption, and monitoring, reducing security risks by 90% and integrating AWS Config and Inspector for continuous compliance.",
-      "image": "src/photos/Cloud.jpg",
+      "image": "/Cloud.jpg",
       "tags": ["Cloud Security", "AWS", "Infrastructure Security", "HIPAA Compliance", "IAM", "Security Groups", "AWS GuardDuty", "AWS Config", "AWS Inspector"],
       "link": ""
     },
     {
       "title": "Penetration Testing & Vulnerability Assessment",
       "description": "Conducted end-to-end penetration testing and vulnerability assessment using tools like Nmap, Metasploit, and Wireshark, identifying critical security flaws and providing actionable remediation recommendations.",
-      "image": "src/photos/Penetration.jpg",
+      "image": "/Penetration.jpg",
       "tags": ["Reconnaissance", "Initial Exploitation", "Establish Persistence & Escalate Privileges", "Move Laterally", "Exfiltration"],
       "link": ""
     },
     {
       "title": "Malware-Infected Hard Drive Forensic Investigation",
       "description": "Performed a full digital forensic investigation on a malware-infected drive, recovering encrypted artifacts, hidden messages, and documented findings in a detailed forensic report.",
-      "image": "src/photos/Digital.jpg",
+      "image": "/Digital.jpg",
       "tags": ["Digital Forensics", "Malware Analysis", "Incident Response", "Autopsy", "Volatility", "Wireshark", "VeraCrypt"],
       "link": ""
     }
