@@ -433,8 +433,7 @@ export default function ClientPage() {
                 <div className="space-y-6">
                   <h3 className="text-2xl font-medium dark:text-gray-400">Let&#39;s work together</h3>
                   <p className="text-lg text-gray-700 dark:text-gray-300">
-                    I&#39;m currently available for freelance work and open to new opportunities. If you have a project that
-                    needs some creative input, feel free to reach out.
+                    I&#39;m currently open to new opportunities. Feel free to reach out.
                   </p>
                   <div className="space-y-4 pt-4">
                     <div className="flex items-center gap-3">
