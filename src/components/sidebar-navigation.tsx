@@ -6,7 +6,6 @@ import { Home, Briefcase, GraduationCap, Award, FileText, Mail, Layers, X, Menu 
 import { Button } from "@/components/ui/button"
 import ThemeToggle from "@/components/theme-toggle"
 import portfolioData from "@/data/portfolio-data.json"
-import profileImage from "../Profile.jpg"
 
 export default function SidebarNavigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -139,7 +138,7 @@ export default function SidebarNavigation() {
         <div className="p-6 border-t border-gray-200 dark:border-gray-800">
           <div className="flex items-center gap-3">
             <img
-              src={profileImage.src}
+              src="/Profile.jpg"
               alt={portfolioData.personal.name}
               className="w-10 h-10 rounded-full object-cover"
             />
