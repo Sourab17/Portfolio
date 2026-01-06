@@ -4,13 +4,13 @@ import { motion } from "framer-motion"
 import { Award } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
-interface AchievementCardProps {
+interface CertificationCardProps {
   title: string
   description: string
   year: string
 }
 
-export default function AchievementCard({ title, description, year }: AchievementCardProps) {
+export default function CertificationCard({ title, description, year }: CertificationCardProps) {
   return (
     <motion.div whileHover={{ y: -5 }} transition={{ duration: 0.3 }}>
       <Card className="border-0 shadow-md hover:shadow-lg transition-shadow">
