@@ -21,8 +21,7 @@ import ChatbotButton from "@/components/chatbot-button"
 import AnimatedText from "@/components/animated-text"
 import { motion } from "framer-motion"
 import TimelineItem from "@/components/timeline-item"
-import AchievementCard from "@/components/achievement-card"
-import BlogCard from "@/components/blog-card"
+import CertificationCard from "@/components/certification-card"
 import SidebarNavigation from "@/components/sidebar-navigation"
 import ContactForm from "@/components/contact-form"
 import portfolioData from "@/data/portfolio-data.json"
@@ -150,7 +149,7 @@ export default function ClientPage() {
                     transition={{ delay: 0.3 }}
                     className="mt-6"
                   >
-                    <Button variant="outline" className="rounded-full px-6 py-2 border-gray-300 dark:border-gray-700 dark:text-white" onClick={()=>{window.open('https://drive.google.com/file/d/14anjHm1n5tBZYPZBoG5WAB1zNM3aiX6o/view?usp=sharing','_blank')}}>
+                    <Button variant="outline" className="rounded-full px-6 py-2 border-gray-300 dark:border-gray-700 dark:text-white" onClick={()=>{window.open('https://drive.google.com/file/d/1DQOxIfbPHDbe4xmz7n1ad6M1KurRCq71/view?usp=sharing','_blank')}}>
                       <Download className="mr-2 h-4 w-4"  />
                       Download Resume
                     </Button>
@@ -395,8 +394,8 @@ export default function ClientPage() {
           </div>
         </section>
 
-        {/* Achievements Section */}
-        <section id="achievements" className="py-20 px-4">
+        {/* Certifications Section */}
+        <section id="certifications" className="py-20 px-4">
           <div className="container mx-auto max-w-5xl">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -404,14 +403,14 @@ export default function ClientPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             >
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center dark:text-white">Achievements</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center dark:text-white">Certifications</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                {portfolioData.achievements.map((achievement, index) => (
-                  <AchievementCard
+                {portfolioData.certifications.map((certification, index) => (
+                  <CertificationCard
                     key={index}
-                    title={achievement.title}
-                    year={achievement.year}
-                    description={achievement.description}
+                    title={certification.title}
+                    year={certification.year}
+                    description={certification.description}
                   />
                 ))}
               </div>
@@ -419,42 +418,7 @@ export default function ClientPage() {
           </div>
         </section>
 
-        {/* Blog Section */}
-        <section
-          id="blog"
-          className="py-20 px-4 bg-white dark:bg-gray-900 backdrop-blur-lg bg-opacity-70 dark:bg-opacity-70"
-        >
-          <div className="container mx-auto max-w-5xl">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            >
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center dark:text-white">Latest Blog Posts</h2>
-              <div className="grid md:grid-cols-3 gap-8">
-                {portfolioData.blogPosts.map((post, index) => (
-                  <BlogCard
-                    key={index}
-                    title={post.title}
-                    excerpt={post.excerpt}
-                    date={post.date}
-                    readTime={post.readTime}
-                    image={post.image}
-                    content={post.content}
-                    index={index}
-                  />
-                ))}
-              </div>
-              <div className="text-center mt-12">
-                <Button variant="outline" className="rounded-full px-8 dark:text-white" onClick={() => window.open("#blog", "_self")}>
-                  View All Posts <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </div>
-            </motion.div>
-          </div>
-        </section>
-
+        
         {/* Contact Section */}
         <section id="contact" className="py-20 px-4">
           <div className="container mx-auto max-w-5xl">
