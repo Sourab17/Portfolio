@@ -98,11 +98,11 @@
   }
 ],
   "projects": [
-    {
-      "title": "Centralized Log Management System",
-      "description": "Built a centralized logging system on Ubuntu VMs using rsyslog, MySQL, and Adminer to collect and manage logs from client machines, improving visibility and auditability of system events.",
-      "image": "/Log.jpg",
-      "tags": ["Log Management", "Centralized Logging"],
+     {
+      "title": "Malware-Infected Hard Drive Forensic Investigation",
+      "description": "Performed a full digital forensic investigation on a malware-infected drive, recovering encrypted artifacts, hidden messages, and documented findings in a detailed forensic report.",
+      "image": "/Digital.jpg",
+      "tags": ["Digital Forensics", "Malware Analysis", "Incident Response", "Autopsy", "Volatility", "Wireshark", "VeraCrypt"],
       "link": ""
     },
     {
@@ -119,11 +119,12 @@
       "tags": ["Reconnaissance", "Initial Exploitation", "Establish Persistence & Escalate Privileges", "Move Laterally", "Exfiltration"],
       "link": ""
     },
-    {
-      "title": "Malware-Infected Hard Drive Forensic Investigation",
-      "description": "Performed a full digital forensic investigation on a malware-infected drive, recovering encrypted artifacts, hidden messages, and documented findings in a detailed forensic report.",
-      "image": "/Digital.jpg",
-      "tags": ["Digital Forensics", "Malware Analysis", "Incident Response", "Autopsy", "Volatility", "Wireshark", "VeraCrypt"],
+   
+      {
+      "title": "Centralized Log Management System",
+      "description": "Built a centralized logging system on Ubuntu VMs using rsyslog, MySQL, and Adminer to collect and manage logs from client machines, improving visibility and auditability of system events.",
+      "image": "/Log.jpg",
+      "tags": ["Log Management", "Centralized Logging"],
       "link": ""
     }
   ],
