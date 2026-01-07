@@ -2,8 +2,8 @@ import type { Metadata } from "next"
 import ClientPage from "./ClientPage"
 
 export const metadata: Metadata = {
-  title: "Portfolio | Praveen Kumar G",
-  description: "Personal portfolio of Praveen Kumar G, a software developer specializing in web development.",
+  title: "Portfolio | Sourab Gadipalli",
+  description: "Personal portfolio of Sourab Gadipalli, a cybersecurity expert.",
 }
 
 export default function Home() {
