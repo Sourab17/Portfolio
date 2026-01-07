@@ -183,7 +183,7 @@ export default function ClientPage() {
                         </div>
                         <div>
                           <h4 className="font-medium dark:text-gray-400">Security Stack</h4>
-                          <p className="text-gray-600 dark:text-gray-400"> Penetration Testinng, Security Information and Event Management (SIEM), Web Application Security, Cloud Security, Network Security, Data Security </p>
+                          <p className="text-gray-600 dark:text-gray-400"> Penetration Testing, Security Information and Event Management (SIEM), Web Application Security, Cloud Security, Network Security, Data Security </p>
                         </div>
                       </div>
 
