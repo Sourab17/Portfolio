@@ -138,7 +138,7 @@ export default function SidebarNavigation() {
         <div className="p-6 border-t border-gray-200 dark:border-gray-800">
           <div className="flex items-center gap-3">
             <img
-              src="/Profile.jpg"
+              src="/Portfolio/Profile.jpg"
               alt={portfolioData.personal.name}
               className="w-10 h-10 rounded-full object-cover"
             />
