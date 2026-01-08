@@ -149,7 +149,7 @@ export default function ClientPage() {
                     transition={{ delay: 0.3 }}
                     className="mt-6"
                   >
-                    <Button variant="outline" className="rounded-full px-6 py-2 border-gray-300 dark:border-gray-700 dark:text-white" onClick={()=>{window.open('https://drive.google.com/file/d/1DQOxIfbPHDbe4xmz7n1ad6M1KurRCq71/view?usp=sharing','_blank')}}>
+                    <Button variant="outline" className="rounded-full px-6 py-2 border-gray-300 dark:border-gray-700 dark:text-white" onClick={()=>{window.open('https://drive.google.com/file/d/1ZyyQcMwgbMqFAfj4wsrHEZLUZDEGqdno/view?usp=sharing','_blank')}}>
                       <Download className="mr-2 h-4 w-4"  />
                       Download Resume
                     </Button>
