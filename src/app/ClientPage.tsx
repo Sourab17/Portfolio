@@ -251,14 +251,6 @@ export default function ClientPage() {
                     variant="ghost"
                     size="icon"
                     className="rounded-full"
-                    onClick={() => window.open(`https://${portfolioData.personal.contact.twitter}`, "_blank")}
-                  >
-                    <Twitter className="h-5 w-5" />
-                  </Button>
-                  <Button
-                    variant="ghost"
-                    size="icon"
-                    className="rounded-full"
                     onClick={() => window.open(`mailto:${portfolioData.personal.contact.email}`)}
                   >
                     <Mail className="h-5 w-5" />
