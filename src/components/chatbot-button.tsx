@@ -56,7 +56,7 @@ export default function ChatbotButton() {
               <CardContent className="p-4">
                 <div className="text-center mb-4">
                   <p className="text-gray-600 dark:text-gray-300">
-                    Hi there! I&#39;m Praveen&#39;s assistant. Where would you like to go?
+                    Hi there! I&#39;m Sourab&#39;s assistant. Where would you like to go?
                   </p>
                 </div>
                 <div className="grid grid-cols-2 gap-3">
