@@ -202,7 +202,7 @@ export default function ClientPage() {
                         </div>
                         <div>
                           <h4 className="font-medium dark:text-gray-400">Location</h4>
-                          <p className="text-gray-600 dark:text-gray-400">Chantilly, VA</p>
+                          <p className="text-gray-600 dark:text-gray-400">United States</p>
                         </div>
                       </div>
                     </div>
