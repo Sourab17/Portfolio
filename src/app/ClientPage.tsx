@@ -271,7 +271,7 @@ export default function ClientPage() {
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center dark:text-white">Featured Projects</h2>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 gap-8 auto-rows-fr">
                 {portfolioData.projects.map((project, index) => (
                   <ProjectCard
                     key={index}
