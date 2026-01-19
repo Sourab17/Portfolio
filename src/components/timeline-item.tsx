@@ -7,11 +7,13 @@ interface TimelineItemProps {
   title: string
   organization: string
   period: string
-  description: string
+  description: string | string[]
   isLast?: boolean
 }
 
 export default function TimelineItem({ title, organization, period, description, isLast = false }: TimelineItemProps) {
+  const isArrayDescription = Array.isArray(description)
+  
   return (
     <div className="relative pl-8 pb-8">
       {/* Timeline line */}
@@ -42,7 +44,18 @@ export default function TimelineItem({ title, organization, period, description,
           <span className="text-sm text-gray-500 dark:text-gray-400 mt-1 sm:mt-0">{period}</span>
         </div>
         <p className="text-base font-medium text-gray-600 dark:text-gray-300 mb-2">{organization}</p>
-        <p className="text-gray-600 dark:text-gray-400">{description}</p>
+        
+        {isArrayDescription ? (
+          <ul className="list-disc list-outside ml-5 space-y-2">
+            {description.map((item, index) => (
+              <li key={index} className="text-gray-600 dark:text-gray-400">
+                {item}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className="text-gray-600 dark:text-gray-400">{description}</p>
+        )}
       </motion.div>
     </div>
   )
