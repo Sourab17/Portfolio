@@ -20,8 +20,6 @@ export default function ChatbotButton() {
     { label: "Skills", id: "skills" },
     { label: "Experience", id: "experience" },
     { label: "Education", id: "education" },
-    { label: "Achievements", id: "achievements" },
-    { label: "Blog", id: "blog" },
     { label: "Contact", id: "contact" },
   ]
 
