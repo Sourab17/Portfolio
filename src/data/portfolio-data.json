@@ -51,7 +51,7 @@
     "title": "Master of Engineering Program in Cybersecurity",
     "organization": "University of Maryland, College Park",
     "period": "2023 – 2025",
-    "description": "Coursework emphasized hands-on cybersecurity across penetration testing, cloud security, digital forensics, and secure software engineering. Gained practical experience in reconnaissance, exploitation, lateral movement, OWASP Top 10 vulnerabilities, phishing exercises, and vulnerability reporting. Developed strong foundations in cloud security architecture, identity and access management, compliance, and risk mitigation. Built expertise in information assurance, incident response, disk and memory forensics, reverse engineering, and exploitation of C/Unix binaries, along with secure software testing, threat modeling, and network protocols."
+    "description": "Coursework emphasized hands-on cybersecurity across penetration testing, cloud security, digital forensics, Information Assurance and secure software engineering."
   },
   {
     "title": "Bachelor of Technology in Computer Science and Engineering",
@@ -73,8 +73,8 @@
     ]
   },
   {
-    "category": "Operating Systems",
-    "items": ["Windows", "Ubuntu", "Kali Linux", "OpenAI API", "LLMs"]
+    "category": "Operating Systems / Platforms",
+    "items": ["Windows", "Ubuntu", "Kali Linux", "SIFT Workstation"]
   },
   {
     "category": "Security Frameworks & Standards",
