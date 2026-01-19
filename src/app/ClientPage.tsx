@@ -6,7 +6,6 @@ import {
   Github,
   Linkedin,
   Mail,
-  Twitter,
   Download,
   Briefcase,
   Code,
@@ -496,14 +495,7 @@ export default function ClientPage() {
                 >
                   <Linkedin className="h-5 w-5" />
                 </Button>
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="rounded-full dark:text-gray-400"
-                  onClick={() => window.open(`https://${portfolioData.personal.contact.twitter}`, "_blank")}
-                >
-                  <Twitter className="h-5 w-5" />
-                </Button>
+          
                 <Button
                   variant="ghost"
                   size="icon"
