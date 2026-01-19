@@ -16,7 +16,7 @@ interface ProjectCardProps {
 export default function ProjectCard({ title, description, image, tags, link }: ProjectCardProps) {
   return (
     <motion.div whileHover={{ y: -5 }} transition={{ duration: 0.3 }}>
-      <Card className="overflow-hidden border-0 shadow-lg">
+      <Card className="overflow-hidden border-0 shadow-lg h-full flex flex-col">
         <div className="relative overflow-hidden aspect-video">
           <img
             src={image}
@@ -24,7 +24,7 @@ export default function ProjectCard({ title, description, image, tags, link }: P
             className="object-cover w-full h-full transition-transform duration-500 hover:scale-105"
           />
         </div>
-        <CardContent className="p-6">
+        <CardContent className="p-6 flex-1 flex flex-col">
           <div className="flex justify-between items-start mb-3">
             <h3 className="text-xl font-semibold">{title}</h3>
             <a
@@ -36,7 +36,7 @@ export default function ProjectCard({ title, description, image, tags, link }: P
             </a>
           </div>
           <p className="text-gray-600 dark:text-gray-400 mb-4">{description}</p>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 mt-auto">
             {tags.map((tag) => (
               <Badge key={tag} variant="secondary" className="rounded-full font-normal">
                 {tag}
