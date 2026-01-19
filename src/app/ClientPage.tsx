@@ -410,6 +410,7 @@ export default function ClientPage() {
                     title={certification.title}
                     year={certification.year}
                     description={certification.description}
+                    tags={certification.tags}
                   />
                 ))}
               </div>
