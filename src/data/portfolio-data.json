@@ -108,7 +108,7 @@
       "description": "Performed a full digital forensic investigation on a malware-infected drive, recovering encrypted artifacts, hidden messages, and documented findings in a detailed forensic report.",
       "image": "/Portfolio/Digital.jpg",
       "tags": ["Digital Forensics", "Malware Analysis", "Incident Response", "Autopsy", "Volatility", "Wireshark", "VeraCrypt"],
-      "link": ""
+      "link": "https://drive.google.com/file/d/16De2niiMCMubwH7-j1EEV-ziUeY2U0M4/view?usp=sharing"
     },
     {
       "title": "Securing a Cloud-based (AWS) Healthcare Application",
@@ -122,7 +122,7 @@
       "description": "Conducted end-to-end penetration testing and vulnerability assessment using tools like Nmap, Metasploit, and Wireshark, identifying critical security flaws and providing actionable remediation recommendations.",
       "image": "/Portfolio/Penetration.jpg",
       "tags": ["Reconnaissance", "Initial Exploitation", "Establish Persistence & Escalate Privileges", "Move Laterally", "Exfiltration"],
-      "link": ""
+      "link": "https://drive.google.com/file/d/1fadD8xxnamDK9hGTgJuxqL411j60GTgU/view?usp=sharing"
     },
    
       {
@@ -130,7 +130,7 @@
       "description": "Built a centralized logging system on Ubuntu VMs using rsyslog, MySQL, and Adminer to collect and manage logs from client machines, improving visibility and auditability of system events.",
       "image": "/Portfolio/Log.jpg",
       "tags": ["Log Management", "Centralized Logging"],
-      "link": ""
+      "link": "https://www.notion.so/100rab/Centralized-Log-Management-System-2d5f2090b6e280109040f9c1a9c0a203?source=copy_link"
     }
   ],
   "certifications": [
