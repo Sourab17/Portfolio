@@ -19,6 +19,12 @@
     }
   },
   "experience": [
+   {
+    "title": "Cybersecurity Analyst",
+      "organization": "Resilience Inc",
+    "period": "Dec 2025 – Present",
+    "description": ["Collaborated with the team to deploy and configure Graylog SIEM on an Oracle instance to enable future website log ingestion."]
+  },
   {
     "title": "Analyst-IT",
     "organization": "Merilytics",
