@@ -83,7 +83,7 @@
   },
   {
     "category": "Security Frameworks & Standards",
-    "items": ["OWASP TOP 10", "HIPAA", " MITRE ATT&CK"]
+    "items": ["OWASP TOP 10", "SANS CWE Top 25", "HIPAA", " MITRE ATT&CK"]
   },
   {
     "category": "Offensive Security Tools",
