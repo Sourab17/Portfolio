@@ -108,21 +108,21 @@
       "description": "Performed a full digital forensic investigation on a malware-infected drive, recovering encrypted artifacts, hidden messages, and documented findings in a detailed forensic report.",
       "image": "/Portfolio/Digital.jpg",
       "tags": ["Digital Forensics", "Malware Analysis", "Incident Response", "Autopsy", "Volatility", "Wireshark", "VeraCrypt"],
-      "link": "https://drive.google.com/file/d/16De2niiMCMubwH7-j1EEV-ziUeY2U0M4/view?usp=sharing"
+      "link": "https://github.com/Sourab17/Forensic-Investigation.git"
     },
     {
       "title": "Securing a Cloud-based (AWS) Healthcare Application",
       "description": "Assessed and secured a cloud healthcare application by implementing HIPAA-compliant IAM policies, access controls, encryption, and monitoring, reducing security risks by 90% and integrating AWS Config and Inspector for continuous compliance.",
       "image": "/Portfolio/Cloud.jpg",
       "tags": ["Cloud Security", "AWS", "Infrastructure Security", "HIPAA Compliance", "IAM", "Security Groups", "AWS GuardDuty", "AWS Config", "AWS Inspector"],
-      "link": "https://drive.google.com/file/d/1BpGmaWv3obSIq1zr1O2d_S2a1uCBmGun/view?usp=sharing"
+      "link": "https://github.com/Sourab17/Cloud_Security.git"
     },
     {
       "title": "Penetration Testing & Vulnerability Assessment",
       "description": "Conducted end-to-end penetration testing and vulnerability assessment using tools like Nmap, Metasploit, and Wireshark, identifying critical security flaws and providing actionable remediation recommendations.",
       "image": "/Portfolio/Penetration.jpg",
       "tags": ["Reconnaissance", "Initial Exploitation", "Establish Persistence & Escalate Privileges", "Move Laterally", "Exfiltration"],
-      "link": "https://drive.google.com/file/d/1fadD8xxnamDK9hGTgJuxqL411j60GTgU/view?usp=sharing"
+      "link": "https://github.com/Sourab17/Penetration_Testing.git"
     },
    
       {
@@ -130,7 +130,7 @@
       "description": "Built a centralized logging system on Ubuntu VMs using rsyslog, MySQL, and Adminer to collect and manage logs from client machines, improving visibility and auditability of system events.",
       "image": "/Portfolio/Log.jpg",
       "tags": ["Log Management", "Centralized Logging"],
-      "link": "https://www.notion.so/100rab/Centralized-Log-Management-System-2d5f2090b6e280109040f9c1a9c0a203?source=copy_link"
+      "link": "https://github.com/Sourab17/Centralized_Log_Management_System.git"
     }
   ],
   "certifications": [
