@@ -135,6 +135,12 @@
   ],
   "certifications": [
   {
+    "title": "GIAC Foundational Cybersecurity Technologies (GFACT)",
+    "year": "2026",
+    "description": "Validated foundational cybersecurity expertise in computer systems, networking, operating systems, and core security principles essential for cybersecurity roles.",
+    "tags": []
+  },
+  {
     "title": "AWS Certified Security - Specialty",
     "year": "2025",
     "description": "Validated expertise in AWS cloud security, including IAM, encryption, logging and monitoring, threat detection, incident response, and compliance using AWS-native security services.",
