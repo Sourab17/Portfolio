@@ -134,7 +134,7 @@ export default function ClientPage() {
                   >
                     <div className="absolute inset-0 rounded-full bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 shadow-xl"></div>
                     <img
-                      src="/Portfolio/Profile_Photo.jpeg"
+                      src="/Portfolio/Profile.jpg"
                       alt={portfolioData.personal.name}
                       className="absolute inset-0 object-cover w-full h-full rounded-full border-4 border-white dark:border-gray-800 shadow-lg"
                     />
