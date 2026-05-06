@@ -135,9 +135,15 @@
   ],
   "certifications": [
   {
+    "title": "GIAC Security Essentials (GSEC)",
+    "year": "2026",
+    "description": "Validated hands-on security knowledge in access control, network and endpoint defense, incident response, SIEM, log management and cryptography.",
+    "tags": []
+  },
+  {
     "title": "GIAC Foundational Cybersecurity Technologies (GFACT)",
     "year": "2026",
-    "description": "Validated foundational cybersecurity expertise in computer systems, networking, operating systems, and core security principles essential for cybersecurity roles.",
+    "description": "Validated foundational cybersecurity expertise in computer systems, networking, operating systems and core security principles essential for cybersecurity roles.",
     "tags": []
   },
   {
