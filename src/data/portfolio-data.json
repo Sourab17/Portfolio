@@ -2,7 +2,7 @@
 {
   "personal": {
     "name": "Sourab Gadipalli",
-    "title": "Security Engineer",
+    "title": "Security Analyst",
 "bio": "GIAC certified cybersecurity professional specializing in threat detection, SIEM log ingestion, and incident response across enterprise and cloud environments. Experienced in configuring SIEM dashboards, conducting digital forensic investigations using Autopsy, Wireshark, and mapping security telemetry to the MITRE ATT&CK framework. Combines deep technical analysis of security events with a background as a Graduate Teaching Assistant to clearly explain complex findings to cross functional teams.",
     "longBio": [
       " I'm a Cybersecurity Analyst, where I work on the detection side of things by getting security telemetry into the SIEM and building the dashboards analysts actually use. Most recently I built a Cloudflare Workers pipeline that streams granular web access logs into our SIEM, which meaningfully widened what we can see.",
