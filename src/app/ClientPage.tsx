@@ -134,7 +134,7 @@ export default function ClientPage() {
                   >
                     <div className="absolute inset-0 rounded-full bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 shadow-xl"></div>
                     <img
-                      src={portfolioData.personal.photo}
+                      src=""
                       alt={portfolioData.personal.name}
                       className="absolute inset-0 object-cover w-full h-full rounded-full border-4 border-white dark:border-gray-800 shadow-lg"
                     />
@@ -261,6 +261,121 @@ export default function ClientPage() {
           </div>
         </section>
 
+   {/* Experience Section */}
+        <section id="experience" className="py-20 px-4">
+          <div className="container mx-auto max-w-5xl">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            >
+              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center dark:text-white">Professional Experience</h2>
+              <div className="max-w-3xl mx-auto">
+                {portfolioData.experience.map((exp, index) => (
+                  <TimelineItem
+                    key={index}
+                    title={exp.title}
+                    organization={exp.organization}
+                    period={exp.period}
+                    description={exp.description}
+                    isLast={index === portfolioData.experience.length - 1}
+                  />
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        </section>
+        
+ {/* Skills Section */}
+        <section
+          id="skills"
+          className="py-20 px-4 bg-white dark:bg-gray-900 backdrop-blur-lg bg-opacity-70 dark:bg-opacity-70"
+        >
+          <div className="container mx-auto max-w-5xl">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            >
+              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center dark:text-white">Skills & Expertise</h2>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                {portfolioData.skills.map((skillCategory, index) => (
+                  <Card
+                    key={index}
+                    className="bg-gray-50 dark:bg-gray-800 border-0 shadow-sm hover:shadow-md transition-shadow"
+                  >
+                    <CardContent className="p-6 text-center">
+                      <h3 className="font-medium text-lg mb-4">{skillCategory.category}</h3>
+                      <div className="flex flex-wrap gap-2 justify-center">
+                        {skillCategory.items.map((skill, skillIndex) => (
+                          <SkillBadge key={skillIndex} name={skill} />
+                        ))}
+                      </div>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        </section>
+
+  {/* Certifications Section */}
+        <section id="certifications" className="py-20 px-4">
+          <div className="container mx-auto max-w-5xl">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            >
+              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center dark:text-white">Certifications</h2>
+              <div className="grid md:grid-cols-2 gap-6">
+                {portfolioData.certifications.map((certification, index) => (
+                  <CertificationCard
+                    key={index}
+                    title={certification.title}
+                    year={certification.year}
+                    description={certification.description}
+                    tags={certification.tags}
+                  />
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        </section>
+
+ {/* Education Section */}
+        <section
+          id="education"
+          className="py-20 px-4 bg-white dark:bg-gray-900 backdrop-blur-lg bg-opacity-70 dark:bg-opacity-70"
+        >
+          <div className="container mx-auto max-w-5xl">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            >
+              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center dark:text-white">Education</h2>
+              <div className="max-w-3xl mx-auto">
+                {portfolioData.education.map((edu, index) => (
+                  <TimelineItem
+                    key={index}
+                    title={edu.title}
+                    organization={edu.organization}
+                    period={edu.period}
+                    description={edu.description}
+                    isLast={index === portfolioData.education.length - 1}
+                  />
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        </section>
+
+        
         {/* Projects Section */}
         <section id="projects" className="py-20 px-4">
           <div className="container mx-auto max-w-5xl">
@@ -296,122 +411,9 @@ export default function ClientPage() {
           </div>
         </section>
 
-        {/* Skills Section */}
-        <section
-          id="skills"
-          className="py-20 px-4 bg-white dark:bg-gray-900 backdrop-blur-lg bg-opacity-70 dark:bg-opacity-70"
-        >
-          <div className="container mx-auto max-w-5xl">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            >
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center dark:text-white">Skills & Expertise</h2>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                {portfolioData.skills.map((skillCategory, index) => (
-                  <Card
-                    key={index}
-                    className="bg-gray-50 dark:bg-gray-800 border-0 shadow-sm hover:shadow-md transition-shadow"
-                  >
-                    <CardContent className="p-6 text-center">
-                      <h3 className="font-medium text-lg mb-4">{skillCategory.category}</h3>
-                      <div className="flex flex-wrap gap-2 justify-center">
-                        {skillCategory.items.map((skill, skillIndex) => (
-                          <SkillBadge key={skillIndex} name={skill} />
-                        ))}
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Experience Section */}
-        <section id="experience" className="py-20 px-4">
-          <div className="container mx-auto max-w-5xl">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            >
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center dark:text-white">Professional Experience</h2>
-              <div className="max-w-3xl mx-auto">
-                {portfolioData.experience.map((exp, index) => (
-                  <TimelineItem
-                    key={index}
-                    title={exp.title}
-                    organization={exp.organization}
-                    period={exp.period}
-                    description={exp.description}
-                    isLast={index === portfolioData.experience.length - 1}
-                  />
-                ))}
-              </div>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Education Section */}
-        <section
-          id="education"
-          className="py-20 px-4 bg-white dark:bg-gray-900 backdrop-blur-lg bg-opacity-70 dark:bg-opacity-70"
-        >
-          <div className="container mx-auto max-w-5xl">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            >
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center dark:text-white">Education</h2>
-              <div className="max-w-3xl mx-auto">
-                {portfolioData.education.map((edu, index) => (
-                  <TimelineItem
-                    key={index}
-                    title={edu.title}
-                    organization={edu.organization}
-                    period={edu.period}
-                    description={edu.description}
-                    isLast={index === portfolioData.education.length - 1}
-                  />
-                ))}
-              </div>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Certifications Section */}
-        <section id="certifications" className="py-20 px-4">
-          <div className="container mx-auto max-w-5xl">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            >
-              <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center dark:text-white">Certifications</h2>
-              <div className="grid md:grid-cols-2 gap-6">
-                {portfolioData.certifications.map((certification, index) => (
-                  <CertificationCard
-                    key={index}
-                    title={certification.title}
-                    year={certification.year}
-                    description={certification.description}
-                    tags={certification.tags}
-                  />
-                ))}
-              </div>
-            </motion.div>
-          </div>
-        </section>
 
         
-        {/* Contact Section */}
+      {/* Contact Section */}
         <section id="contact" className="py-20 px-4">
           <div className="container mx-auto max-w-5xl">
             <motion.div
