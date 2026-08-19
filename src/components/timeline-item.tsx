@@ -40,7 +40,7 @@ export default function TimelineItem({ title, organization, period, description,
         transition={{ duration: 0.4, delay: 0.3 }}
       >
         <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-1">
-          <h3 className="text-lg font-medium">{title}</h3>
+          <h3 className="text-lg font-medium dark:text-white">{title}</h3>
           <span className="text-sm text-gray-500 dark:text-gray-400 mt-1 sm:mt-0">{period}</span>
         </div>
         <p className="text-base font-medium text-gray-600 dark:text-gray-300 mb-2">{organization}</p>
