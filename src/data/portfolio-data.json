@@ -95,10 +95,6 @@
   {
     "category": "Frameworks",
     "items": ["OWASP TOP 10", "NIST CSF", " MITRE ATT&CK"]
-  },
-  {
-    "category": "Offensive Security Tools",
-    "items": ["Nmap", "Burp Suite", "Metasploit", "SQLmap", "Hydra", "Ligolo-ng"]
   }
  
 ],
